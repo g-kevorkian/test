@@ -156,7 +156,7 @@ jobs:
   cleanup:
     name: Cleanup Merged PR
     runs-on: ubuntu-latest
-    if: github.event.pull_request.merged == true || github.event.pull_request.state == 'closed'
+    if: (github.event_name == 'pull_request_target' || github.event.pull_request.base.repo.fork) && (github.event.pull_request.merged == true || github.event.pull_request.state == 'closed')
     steps:
       - name: Checkout Repository
         uses: actions/checkout@v4
