@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkpaa_doc=self.webpackChunkpaa_doc||[]).push([[8315],{16930:e=>{e.exports=JSON.parse('{"title":"PROJECT PANEL","description":" ","slug":"/category/project-panel","permalink":"/test/category/project-panel","navigation":{"previous":{"title":"OVERVIEW","permalink":"/test/"},"next":{"title":"Discover","permalink":"/test/category/discover"}}}')}}]);
