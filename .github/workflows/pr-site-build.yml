@@ -21,7 +21,8 @@ on:
       - closed
 
 env:
-  PR_FOLDER: ${{github.event.pull_request.user.name}}-${{github.event.pull_request.head.ref}}
+  # https://docs.github.com/en/webhooks/webhook-events-and-payloads#pull_request
+  PR_FOLDER: ${{github.event.pull_request.user.login}}-${{github.event.pull_request.head.ref}}
 
 jobs:
   build:
